@@ -1,0 +1,27 @@
+{
+  "name": "bobbyelmore-dev",
+  "version": "1.0.0",
+  "description": "Bobby Elmore's personal website",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bqbbo/bobbyelmore.com.git"
+  },
+  "author": "bqbbo",
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://github.com/bqbbo/bobbyelmore.com/issues"
+  },
+  "homepage": "https://github.com/bqbbo/bobbyelmore.com#readme",
+  "dependencies": {
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

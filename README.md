@@ -1,2 +1,3 @@
 # bobbyelmore.com
-personal website
+
+Personal website; set `.env` with `APPLICATION_PORT = [port]`
