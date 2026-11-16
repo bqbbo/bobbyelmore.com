@@ -5,7 +5,10 @@
     "main": "./src/index.js",
     "type": "module",
     "scripts": {
-        "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
+        "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+        "prod:local": "docker compose up -d --build",
+        "prod:stop": "docker compose down",
+        "prod:logs": "docker compose logs -f"
     },
     "repository": {
         "type": "git",

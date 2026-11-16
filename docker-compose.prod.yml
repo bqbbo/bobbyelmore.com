@@ -1,0 +1,9 @@
+services:
+    frontend:
+        ports:
+            - "443:443"
+        environment:
+            - DOMAIN=bobbyelmore.com
+        volumes:
+            - /etc/letsencrypt:/etc/letsencrypt:ro
+            - ./frontend/nginx.prod.conf.template:/etc/nginx/templates/default.conf.template:ro

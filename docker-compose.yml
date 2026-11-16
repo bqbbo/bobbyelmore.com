@@ -1,0 +1,12 @@
+services:
+    backend:
+        build: ./backend
+        restart: unless-stopped
+
+    frontend:
+        build: ./frontend
+        ports:
+            - "8080:80" # This script does not serve to actual HTTP.
+        depends_on:
+            - backend
+        restart: unless-stopped
