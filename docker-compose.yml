@@ -6,7 +6,7 @@ services:
     frontend:
         build: ./frontend
         ports:
-            - "8080:80" # This script does not serve to actual HTTP.
+            - "80:80" # This script overrides any existing HTTP inbound. Do not develop on the production machine.
         depends_on:
             - backend
         restart: unless-stopped
