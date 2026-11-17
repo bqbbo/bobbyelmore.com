@@ -17,5 +17,6 @@ jobs:
                   key: ${{ secrets.SSH_PRIVATE_KEY }}
                   port: ${{ secrets.SSH_PORT }}
                   script: |
-                      sudo systemctl restart bobbyelmore.service
+                      cd
+                      ./deploy-bobbyelmore.sh
                       sudo wall "bobbyelmore.com has been rebuilt from GitHub."
